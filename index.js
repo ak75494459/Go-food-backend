@@ -19,6 +19,10 @@ const foodItem = require('./dbs/fooditem');
 
 
 
+app.get("/health",(req,res)=>{
+  res.send({message:"health is ok"})
+})
+
 app.use("/api", require("./Routes/CreateUser"))
 app.use("/api", require("./Routes/DisplayData"))
 app.use("/api", require("./Routes/OrderData"))
