@@ -30,7 +30,7 @@ async (req, res) => {
       email: req.body.email,
       password: safePass1,
       confirmPassword: safePass2
-    }).then(res.json({ success: true , safePass1 , safePass2 }))
+    }).then(res.json({ success: true , safePass1 , safePass2  }))
   } catch (error) {
     console.error('Error creating user:', error);
     res.status(500).send('Internal Server Error');
